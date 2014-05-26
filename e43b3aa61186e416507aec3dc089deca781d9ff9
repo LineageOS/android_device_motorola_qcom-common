@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_3326f5ba",
+        "filename": "overlay/packages/services/Telephony/res/values-mcc310-mnc120/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 129
+      },
+      "writtenOn": "2014-05-26T20:18:33Z",
+      "side": 1,
+      "message": "This is in moto_msm8960 overlay, no need to add it here.",
+      "revId": "e43b3aa61186e416507aec3dc089deca781d9ff9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da0c15f0_132bf183",
+        "filename": "overlay/packages/services/Telephony/res/values-mcc310-mnc120/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 129
+      },
+      "writtenOn": "2014-05-26T20:18:33Z",
+      "side": 1,
+      "message": "true by default, no need to specify it here.",
+      "revId": "e43b3aa61186e416507aec3dc089deca781d9ff9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da0c15f0_933701e3",
+        "filename": "overlay/packages/services/Telephony/res/values-mcc310-mnc120/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 129
+      },
+      "writtenOn": "2014-05-26T20:18:33Z",
+      "side": 1,
+      "message": "already in qcom common overlay, no need to repeat it here.",
+      "revId": "e43b3aa61186e416507aec3dc089deca781d9ff9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
