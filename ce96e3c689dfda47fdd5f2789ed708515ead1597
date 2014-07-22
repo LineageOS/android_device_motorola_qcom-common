@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a061dce_69c7e745",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2014-07-22T11:43:34Z",
+      "side": 1,
+      "message": "This is already defined on line 57 so probably just need to remove the NO_USB",
+      "revId": "ce96e3c689dfda47fdd5f2789ed708515ead1597",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
