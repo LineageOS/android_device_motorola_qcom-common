@@ -34,6 +34,24 @@
       "revId": "514221a35306a92361c1b8e4920085cbf1515161",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_51a44556",
+        "filename": "qcom-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2014-11-18T10:28:38Z",
+      "side": 1,
+      "message": "Tunnel mode has less battery consumption than LPA, but DSP Manager doesn\u0027t work at all with it, so must of us are using LPA.",
+      "parentUuid": "1a122d0e_4e030474",
+      "revId": "514221a35306a92361c1b8e4920085cbf1515161",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
