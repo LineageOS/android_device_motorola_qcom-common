@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa7ab95a_1820529b",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2015-04-20T21:45:19Z",
+      "side": 1,
+      "message": "May as well fix the typo \"definied\" while you\u0027re changing this comment.",
+      "revId": "3f74a2abcfd26fb884733a0bcc6adf3d551dc994",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
