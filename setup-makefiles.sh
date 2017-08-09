@@ -13,7 +13,8 @@ FAMILY_VENDOR_MAKEFILE=../../../$FAMILY_OUTDIR/$FAMILY_DEVICE-vendor.mk
 YEAR=`date +"%Y"`
 
 (cat << EOF) > $MAKEFILE
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -102,7 +103,8 @@ done
 fi
 
 (cat << EOF) > $VENDOR_MAKEFILE
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -136,7 +138,8 @@ else
 fi
 
 (cat << EOF) > ../../../$OUTDIR/BoardConfigVendor.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -155,7 +158,8 @@ EOF
 
 if [ -d ../../../$OUTDIR/proprietary/app ]; then
 (cat << EOF) > ../../../$OUTDIR/proprietary/app/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -209,7 +213,8 @@ fi
 
 if [ -d ../../../$OUTDIR/proprietary/framework ]; then
 (cat << EOF) > ../../../$OUTDIR/proprietary/framework/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -263,7 +268,8 @@ fi
 
 if [ -d ../../../$OUTDIR/proprietary/priv-app ]; then
 (cat << EOF) > ../../../$OUTDIR/proprietary/priv-app/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -320,7 +326,8 @@ LIBS=`cat device-proprietary-files.txt | grep '\-lib' | cut -d'-' -f2 | head -1`
 
 if [ -f ../../../$OUTDIR/proprietary/$LIBS ]; then
 (cat << EOF) > ../../../$OUTDIR/proprietary/lib/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -377,7 +384,8 @@ VENDORLIBS=`cat device-proprietary-files.txt | grep '\-vendor\/lib' | cut -d'-' 
 
 if [ -f ../../../$OUTDIR/proprietary/$VENDORLIBS ]; then
 (cat << EOF) > ../../../$OUTDIR/proprietary/vendor/lib/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -434,7 +442,8 @@ fi
 
 if [ ! -z $FAMILY_DEVICE ]; then
 (cat << EOF) > $FAMILY_MAKEFILE
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -475,7 +484,8 @@ for FILE in `egrep -v '(^#|^$)' ../$FAMILY_DEVICE/common-proprietary-files.txt`;
 done
 
 (cat << EOF) > ../../../$FAMILY_OUTDIR/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -500,7 +510,8 @@ endif
 EOF
 
 (cat << EOF) > ../../../$FAMILY_OUTDIR/proprietary/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -523,7 +534,8 @@ include \$(call all-makefiles-under,\$(LOCAL_PATH))
 EOF
 
 (cat << EOF) > $FAMILY_VENDOR_MAKEFILE
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -546,7 +558,8 @@ EOF
 EOF
 
 (cat << EOF) > ../../../$FAMILY_OUTDIR/BoardConfigVendor.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -565,7 +578,8 @@ EOF
 
 if [ -d ../../../$FAMILY_OUTDIR/proprietary/app ]; then
 (cat << EOF) > ../../../$FAMILY_OUTDIR/proprietary/app/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -625,7 +639,8 @@ fi
 
 if [ -d ../../../$FAMILY_OUTDIR/proprietary/framework ]; then
 (cat << EOF) > ../../../$FAMILY_OUTDIR/proprietary/framework/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -685,7 +700,8 @@ fi
 
 if [ -d ../../../$FAMILY_OUTDIR/proprietary/priv-app ]; then
 (cat << EOF) > ../../../$FAMILY_OUTDIR/proprietary/priv-app/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -748,7 +764,8 @@ LIBS=`cat ../$FAMILY_DEVICE/common-proprietary-files.txt | grep '\-lib' | cut -d
 
 if [ -f ../../../$FAMILY_OUTDIR/proprietary/$LIBS ]; then
 (cat << EOF) > ../../../$FAMILY_OUTDIR/proprietary/lib/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -811,7 +828,8 @@ VENDORLIBS=`cat ../$FAMILY_DEVICE/common-proprietary-files.txt | grep '\-vendor\
 
 if [ -f ../../../$FAMILY_OUTDIR/proprietary/$VENDORLIBS ]; then
 (cat << EOF) > ../../../$FAMILY_OUTDIR/proprietary/vendor/lib/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -874,7 +892,8 @@ fi
 
 if [ ! -z $COMMON_DEVICE ]; then
 (cat << EOF) > $COMMON_MAKEFILE
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -915,7 +934,8 @@ for FILE in `egrep -v '(^#|^$)' ../$COMMON_DEVICE/common-proprietary-files.txt`;
 done
 
 (cat << EOF) > ../../../$COMMON_OUTDIR/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -940,7 +960,8 @@ endif
 EOF
 
 (cat << EOF) > ../../../$COMMON_OUTDIR/proprietary/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -963,7 +984,8 @@ include \$(call all-makefiles-under,\$(LOCAL_PATH))
 EOF
 
 (cat << EOF) > $COMMON_VENDOR_MAKEFILE
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -986,7 +1008,8 @@ EOF
 EOF
 
 (cat << EOF) > ../../../$COMMON_OUTDIR/BoardConfigVendor.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1005,7 +1028,8 @@ EOF
 
 if [ -d ../../../$COMMON_OUTDIR/proprietary/app ]; then
 (cat << EOF) > ../../../$COMMON_OUTDIR/proprietary/app/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1065,7 +1089,8 @@ fi
 
 if [ -d ../../../$COMMON_OUTDIR/proprietary/framework ]; then
 (cat << EOF) > ../../../$COMMON_OUTDIR/proprietary/framework/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1125,7 +1150,8 @@ fi
 
 if [ -d ../../../$COMMON_OUTDIR/proprietary/priv-app ]; then
 (cat << EOF) > ../../../$COMMON_OUTDIR/proprietary/priv-app/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1188,7 +1214,8 @@ LIBS=`cat ../$COMMON_DEVICE/common-proprietary-files.txt | grep '\-lib' | cut -d
 
 if [ -f ../../../$COMMON_OUTDIR/proprietary/$LIBS ]; then
 (cat << EOF) > ../../../$COMMON_OUTDIR/proprietary/lib/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1251,7 +1278,8 @@ VENDORLIBS=`cat ../$COMMON_DEVICE/common-proprietary-files.txt | grep '\-vendor\
 
 if [ -f ../../../$COMMON_OUTDIR/proprietary/$VENDORLIBS ]; then
 (cat << EOF) > ../../../$COMMON_OUTDIR/proprietary/vendor/lib/Android.mk
-# Copyright (C) $YEAR The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) $YEAR The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
